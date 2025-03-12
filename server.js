@@ -14,12 +14,12 @@ app.use('/auth', authRoutes);
 app.use('/protected', protectedRoutes);
 
 app.get('/', (req, res) => {
-    res.send('Welcome to the Auth API 🚀');
+    res.send('Welcome to the Auth API ');
 });
 
 const PORT = process.env.PORT || 3000;
     app.listen(PORT, () => {
-        console.log(`✅ Server running on port ${PORT}`);
+        console.log(`Server running on port ${PORT}`);
     });
 
 module.exports = app; 
